@@ -8,8 +8,10 @@
   width: 100vw;
 } */
 .nav{
+  position: fixed;
   font-weight: bold;
   display: flex;
+  /* display: inline-block; */
   justify-content: space-between;
   background-color: rgba(255, 255, 255, .4);
   height: 5em;
@@ -21,12 +23,32 @@
 }
 .logo img:hover{
   cursor: pointer;
+  
 }
 .nav-selection{
+  width: 50%;
+  text-align: center;
   padding-top: 2em;
+  /* padding-left: 50vw; */
   /* color: white; */
 }
 .selection{
   font-family: 'Courier New', Courier, monospace;
   padding: 0em 2em; 
+}
+.selection a{
+  text-decoration: none;
+  color: black;
+}
+.selection:hover{
+  cursor: pointer;
+}
+#Home{
+  padding-top: 5em;
+}
+#Home, #About, #Projects, #Contact{
+  height: 100vh;
+}
+h1{
+  padding-top: 3em;
 }

@@ -2,34 +2,76 @@ import React, { Component } from 'react';
 import './App.css';
 // import bg from  
 import Home from './components/Home';
-import NavBar from './components/NavBar'
+import NavBar from './components/NavBar';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact'
+import ReallySmoothScroll from 'really-smooth-scroll';
+
+// ReallySmoothScroll.shim();
+
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       currentView: '',
     }
+    this.ToTop = this.ToTop.bind(this);
+    this.ToAbout = this.ToAbout.bind(this);
+    this.ToProjects  = this.ToProjects.bind(this);
+    this.ToContact = this.ToContact.bind(this);
+  }
+  ToTop(){
+    document.getElementById('Home').scrollIntoView({behavior: "smooth"});
   }
 
-  WhichView(){
-   const { currentView } = this.state;
-
-   switch(currentView){
-     default:
-     return(
-       < Home/>
-     )
-   }
-
-
+  ToAbout(){
+    document.getElementById('About').scrollIntoView({behavior: "smooth"});
   }
+
+  ToProjects(){
+    document.getElementById('Projects').scrollIntoView({behavior: "smooth"});
+  }
+
+  ToContact(){
+    document.getElementById('Contact').scrollIntoView({behavior: "smooth"});
+  }
+
+  // WhichView(){
+  //  const { currentView } = this.state;
+
+  //  switch(currentView){
+  //    default:
+  //    return(
+  //      < Home/>
+  //    )
+  //  }
+
+
+  // }
 
   render() {
     return (
       <div className="App">
         <div className="background">
-        < NavBar/>
-        {this.WhichView()}
+          < NavBar 
+            ToTop = {this.ToTop}
+            ToAbout  = {this.ToAbout}
+            ToProjects = {this.ToProjects}
+            ToContact = {this.ToContact}
+          />
+          <div id="Home">
+            < Home />
+          </div>
+          <div id="About">
+            < About />
+          </div>
+          <div id="Projects">
+            < Projects />
+          </div>
+          <div id="Contact">
+            < Contact/>
+          </div>
         </div>
       </div>
     );

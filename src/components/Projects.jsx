@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Portfolio(){
+function Projects(){
     return (
         <div>
-            <h1>Portfolio</h1>
+            <h1>Projects</h1>
         </div>
     )
 }
-export default Portfolio;
+export default Projects;
