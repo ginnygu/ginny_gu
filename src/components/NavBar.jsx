@@ -7,10 +7,10 @@ function NavBar(props) {
                 <img src="/mini-logo.png" alt=""/>
             </div>
             <div className="nav-selection">
-                <span className="selection" onClick={props.ToTop}>Home</span>
-                <span className="selection" onClick={props.ToAbout}>About</span>
-                <span className="selection" onClick={props.ToProjects}>Projects</span>
-                <span className="selection" onClick={props.ToContact}>Contact</span>
+                <p className="selection" onClick={props.ToTop}>Home</p>
+                <p className="selection" onClick={props.ToAbout}>About</p>
+                <p className="selection" onClick={props.ToProjects}>Projects</p>
+                <p className="selection" onClick={props.ToContact}>Contact</p>
             </div>
         </nav>
     )

@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-// import bg from  
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import About from './components/About';
-import Projects from './components/Projects';
+import Projects from './components/Project/Projects';
 import Contact from './components/Contact'
-import ReallySmoothScroll from 'really-smooth-scroll';
 
-// ReallySmoothScroll.shim();
 
 class App extends Component {
   constructor(props) {
