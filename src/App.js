@@ -76,17 +76,6 @@ class App extends Component {
 }
 
 
-  handleClick = e => {
-    if (ReactDOM.findDOMNode(this).contains(e.target) || this.state.menuClick === "true") {
-      document.querySelector('.selection-box').classList.remove('show-box');
-      this.setState({
-        menuClick: "false"
-      })
-    } else {
-      this.ToOpen();
-    }
-  }
-
 
   handleScroll = () => {
     const { prevScrollpos } = this.state
@@ -110,7 +99,6 @@ class App extends Component {
         menuClick: "false"
       })
     } else {
-      document.addEventListener('click', this.handleClick);
       ham.classList.add('show-box');
       this.setState({
         menuClick: "true"
