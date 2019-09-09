@@ -4,7 +4,7 @@ import Project from './Project';
 function Projects(){
     return (
         <div>
-            <h1>Projects</h1>
+            <h1 className='title'>Projects</h1>
             {< Project/> }
         </div>
     )

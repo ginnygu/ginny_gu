@@ -2,6 +2,9 @@
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
 }
+body{
+  background-color: #d7ced7;
+}
 
 section {
   display: grid;
@@ -16,7 +19,7 @@ section  div {
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  color: #Edb5bf;
+  color: #895061;
   opacity: 0;
   z-index: 2;
 }
@@ -52,11 +55,16 @@ section  div {
 .selection{
   padding-top: 8px;
   font-size: .5em;
+  color: #565656;
 }
 
 .show-box{
   height: 130px;
   transition: 0.5s;
+}
+
+.title{
+  color: #76323f;
 }
 
 .nav-selection{
@@ -110,8 +118,8 @@ span{
 
 .project{
   border: solid 1px #ccc;
-  height: 100px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
 }
 
 #Projects{
@@ -123,11 +131,16 @@ span{
   flex-wrap: wrap;
   justify-content: center;
 }
+.project-image{
+  width: 80vw;
+  height: 30vh;
+  border: solid 1px black;
+}
 
 @keyframes change {
   0%{
     border-radius: 20%;
-    background-color: white;
+    background-color:#eeeedc;
   }
   50%{
     border-radius: 50%;
@@ -144,7 +157,7 @@ span{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, .4);
+    /* background-color: rgba(255, 255, 255); */
     height: 5em;
     transition: top 0.3s;
   }
@@ -189,7 +202,7 @@ span{
     font-size: 4em;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
-    color: #Edb5bf;
+    color: #895061;
     opacity: 0;
     z-index: 2;
   }
@@ -223,6 +236,7 @@ span{
   }
   .project-image{
     width: 40vw;
+    height: 300px;
     border: solid 1px black;
   }
 

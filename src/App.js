@@ -5,7 +5,6 @@ import NavBar from './components/NavBar';
 import About from './components/About';
 import Projects from './components/Project/Projects';
 import Contact from './components/Contact';
-import ReactDOM from 'react-dom';
 import anime  from  'animejs'
 
 
@@ -21,18 +20,15 @@ class App extends Component {
     this.ToOpen = this.ToOpen.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     // add event listener for clicks
     document.addEventListener('click', this.handleClick);
     window.addEventListener('scroll', this.handleScroll);
+    this.anime();
 
   }
   componentWillUnmount() {
     document.addEventListener('click', this.handleClick);
-  }
-
-  componentDidMount() {
-    this.anime();
   }
 
   componentDidUpdate() {
@@ -44,12 +40,6 @@ class App extends Component {
         easing: 'easeOutExpo',
         duration: 750
     });
-    // tl.add({
-    //     targets: 'section div',
-    //     width: '100%',
-    //     backgroundColor: 'rgb(197, 197, 255)',
-    //     delay: anime.stagger(50)
-    // });
     tl.add({
         targets: '.message',
         top: '10%',
@@ -122,18 +112,6 @@ class App extends Component {
     document.getElementById('Contact').scrollIntoView({ behavior: "smooth" });
   }
 
-  // WhichView(){
-  //  const { currentView } = this.state;
-
-  //  switch(currentView){
-  //    default:
-  //    return(
-  //      < Home/>
-  //    )
-  //  }
-
-
-  // }
 
   render() {
     return (
