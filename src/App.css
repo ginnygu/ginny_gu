@@ -2,7 +2,8 @@
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
 }
-body{
+
+body {
   background-color: #d7ced7;
 }
 
@@ -10,90 +11,93 @@ section {
   display: grid;
   grid-template-columns: repeat(10, auto);
 }
-section  div {
+
+section div {
   background-color: white;
   height: 100vh;
 }
 
-.message, .message2, .message3{
+.message,
+.message2,
+.message3 {
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
   color: #895061;
   opacity: 0;
   z-index: 2;
 }
 
-.message{
+.message {
   left: 10%;
   top: 40%;
   font-weight: lighter;
 }
 
-.message2{
+.message2 {
   left: 15%;
   top: 50%;
   font-weight: bolder;
 }
-.message3{
+
+.message3 {
   font-size: .5em;
   left: 20%;
   top: 50%;
   font-weight: lighter;
 }
 
-.selection-box{
+.selection-box {
   left: 0;
   top: 55px;
   height: 0;
   overflow-x: hidden;
   width: 100vw;
-  background: rgba(0, 0, 0, .1);
+  background: white;
   position: absolute;
 }
 
-.selection{
+.selection {
   padding-top: 8px;
   font-size: .5em;
   color: #565656;
 }
 
-.show-box{
+.show-box {
   height: 130px;
   transition: 0.5s;
 }
 
-.title{
+.title {
   color: #76323f;
 }
 
-.nav-selection{
+.nav-selection {
   display: flex;
   flex-direction: column;
 }
 
-.selection a{
+.selection a {
   text-decoration: none;
   color: black;
 }
 
-.nav{
+.nav {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 
-.logo{
+.logo {
   text-align: end;
-  margin-right: 1.5em;
+  margin-right: 2.5em;
 }
 
-.logo img{
+.logo img {
   width: 4em;
   padding: 0;
 }
 
-.hamburger-menu{
+.hamburger-menu {
   margin-left: 1.5em;
   margin-top: 1.5em;
   display: flex;
@@ -102,7 +106,7 @@ section  div {
   width: 50px;
 }
 
-span{
+span {
   height: 2px;
   width: 16px;
   margin: 1px;
@@ -111,46 +115,50 @@ span{
   animation: change 5s;
 }
 
-#Home, #About, #Contact{
+#Home,
+#About,
+#Contact {
   padding-top: 20px;
   height: 100vh;
 }
 
-.project{
+.project {
   border: solid 1px #ccc;
   height: 400px;
   width: 400px;
 }
 
-#Projects{
+#Projects {
   padding-top: 30px;
 }
 
-.projects{
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.project-image{
-  width: 80vw;
-  height: 30vh;
+
+.project-image {
+  width: 75vw;
+  height: 25vh;
   border: solid 1px black;
 }
 
 @keyframes change {
-  0%{
+  0% {
     border-radius: 20%;
-    background-color:#eeeedc;
+    background-color: #eeeedc;
   }
-  50%{
+
+  50% {
     border-radius: 50%;
     background-color: black;
   }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
 
-  .nav{
+  .nav {
     position: sticky;
     top: 0;
     font-weight: bold;
@@ -162,20 +170,20 @@ span{
     transition: top 0.3s;
   }
 
-  .logo img{
+  .logo img {
     width: 5m;
     margin-left: 2em;
   }
- 
-  .logo img:hover{
+
+  .logo img:hover {
     cursor: pointer;
   }
 
-  .hamburger-menu{
+  .hamburger-menu {
     display: none;
   }
 
-  .selection-box{
+  .selection-box {
     width: 50vw;
     height: 20vh;
     top: 0;
@@ -184,21 +192,24 @@ span{
     background: inherit;
     justify-content: space-around;
     text-align: center;
-    padding-top: 1em; 
+    padding-top: 1em;
   }
 
-  .selection{
+  .selection {
     font-size: 15px;
   }
-  .selection:hover{
+
+  .selection:hover {
     cursor: pointer;
   }
 
-  #Home{
+  #Home {
     padding-top: 5em;
   }
 
-  .message, .message2, .message3{
+  .message,
+  .message2,
+  .message3 {
     font-size: 4em;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
@@ -206,38 +217,45 @@ span{
     opacity: 0;
     z-index: 2;
   }
-  
-  .message{
+
+  .message {
     left: 20%;
     top: 40%;
     font-weight: lighter;
   }
-  
-  .message2{
+
+  .message2 {
     left: 25%;
     top: 50%;
     font-weight: bolder;
   }
-  .message3{
+
+  .message3 {
     font-size: 2em;
     left: 30%;
-    top:  0%;
+    top: 0%;
     font-weight: lighter;
   }
 
-  h1{
+  h1 {
     padding-top: 1em;
   }
 
-  .project{
-    height: 300px;
-    width: 100vw;
+  .project {
+    height: 250px;
+    width: 75vw;
     display: flex;
+    margin: 10px;
   }
-  .project-image{
-    width: 40vw;
-    height: 300px;
+
+  .project-image {
+    width: 33vw;
+    height: 250px;
     border: solid 1px black;
+  }
+  .project-info{
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
   }
 
 }

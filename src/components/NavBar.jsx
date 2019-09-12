@@ -9,10 +9,10 @@ function NavBar(props) {
             <div className="nav-selection">
                 <div className="hamburger-menu" onClick={props.ToOpen}><span></span><span></span><span></span></div>
                 <div className="selection-box">
-                    <p className="selection" onClick={props.ToTop}>Home</p>
-                    <p className="selection" onClick={props.ToAbout}>About</p>
-                    <p className="selection" onClick={props.ToProjects}>Projects</p>
-                    <p className="selection" onClick={props.ToContact}>Contact</p>
+                    <p className="selection" onClick={()=>props.ToArea('Top')}>Home</p>
+                    <p className="selection" onClick={()=>props.ToArea('About')}>About</p>
+                    <p className="selection" onClick={()=>props.ToArea('Projects')}>Projects</p>
+                    <p className="selection" onClick={()=>props.ToArea('Contact')}>Contact</p>
                 </div>
             </div>
         </nav>

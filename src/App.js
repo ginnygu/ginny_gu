@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       currentView: "",
       prevScrollpos: window.pageYOffset,
-      menuClick: "false",
+      menuClick: false,
       homeMessage: "Hello, I'm Ginny",
     }
     this.ToOpen = this.ToOpen.bind(this);
@@ -83,33 +83,25 @@ class App extends Component {
     const { menuClick } = this.state;
     const ham = document.querySelector('.selection-box')
     ham.style.transition = "0.5s";
-    if (menuClick === "true") {
+    if (menuClick === true) {
       document.querySelector('.selection-box').classList.remove('show-box');
       this.setState({
-        menuClick: "false"
+        menuClick: false
       })
     } else {
       ham.classList.add('show-box');
       this.setState({
-        menuClick: "true"
+        menuClick: true
       })
     }
   }
 
-  ToTop() {
-    document.getElementById('Top').scrollIntoView({ behavior: "smooth" });
-  }
-
-  ToAbout() {
-    document.getElementById('About').scrollIntoView({ behavior: "smooth" });
-  }
-
-  ToProjects() {
-    document.getElementById('Projects').scrollIntoView({ behavior: "smooth" });
-  }
-
-  ToContact() {
-    document.getElementById('Contact').scrollIntoView({ behavior: "smooth" });
+  ToArea = (area) => {
+    document.getElementById(area).scrollIntoView({ behavior: "smooth" });
+    document.querySelector('.selection-box').classList.remove('show-box');
+    this.setState({
+      menuClick: false
+    })
   }
 
 
@@ -119,11 +111,8 @@ class App extends Component {
         <div className="background">
           <div id="Top">
           < NavBar
-            ToTop={this.ToTop}
-            ToAbout={this.ToAbout}
-            ToProjects={this.ToProjects}
-            ToContact={this.ToContact}
             ToOpen={this.ToOpen}
+            ToArea = {this.ToArea}
             menuClick={this.state.menuClick}
           />
           </div>
@@ -146,5 +135,6 @@ class App extends Component {
     );
   }
 }
+
 
 export default App;
