@@ -7,11 +7,8 @@ function About() {
             <h1 className='title'>About Me</h1>
             <section className='sections'>
                 <img src={logo} className="App-logo"></img>
-                <p>
-                    A Web Developer, with a passion for continuous learning. Through time at General Assembly, Created web applications with Ruby on Rails, React, Javascript, SQL and others. Having been through several different types of industry, I work well with others, becoming highly adaptable and a fast learner. Currently working at Code Immersives to help build minds of future developers, through daily code challenges and providing support during class.
-                </p>
-                <p>
-                    hello
+                <p className= 'about-me'>
+                    I'm a Full-Stack Developer with passion for learning. I enjoy creating new websites for small companies and provide support for those intested in web development. Currently at Code Immersives as a Teacher Assistant, providing guidance in Nodejs, Javascript and Reactjs.
                 </p>
             </section>
         </div>
