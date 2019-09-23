@@ -13,6 +13,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -134,8 +135,8 @@ span {
 #Home,
 #About,
 #Contact {
-  margin-top: 40px;
-  padding-top: 20px;
+  /* margin-top: 40px; */
+  /* padding-top: 20px; */
   height: 100vh;
 }
 
@@ -149,7 +150,8 @@ span {
   padding-top: 30px;
 }
 
-.projects, .sections {
+.projects,
+.sections {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -224,6 +226,14 @@ span {
     padding-top: 5em;
   }
 
+  #Home,
+  #About,
+  #Contact {
+    margin-top: 40px;
+    padding-top: 20px;
+    height: 100vh;
+  }
+
   .message,
   .message2,
   .message3 {
@@ -270,7 +280,8 @@ span {
     height: 250px;
     border: solid 1px black;
   }
-  .project-info{
+
+  .project-info {
     padding-left: 10px;
     font-family: 'Montserrat', sans-serif;
   }
