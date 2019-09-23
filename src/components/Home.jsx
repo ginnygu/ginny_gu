@@ -8,9 +8,9 @@ function Home() {
             <h1 className="message">Hello</h1>
             <h1 className="message2">I'm Ginny</h1>
             <h1 className="message3">Web Developer</h1>
-            <FontAwesomeIcon icon={faJsSquare}/>
-            <FontAwesomeIcon icon={faNodeJs}/>
-            <FontAwesomeIcon icon={faReact}/>
+            <FontAwesomeIcon className=' icons icon-j' icon={faJsSquare}/>
+            <FontAwesomeIcon className=' icons icon-n' icon={faNodeJs}/>
+            <FontAwesomeIcon className=' icons icon-r' icon={faReact}/>
         </div>
     )
 }

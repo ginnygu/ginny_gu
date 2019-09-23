@@ -245,6 +245,25 @@ span {
     z-index: 2;
   }
 
+  .icons{
+    position: absolute;
+    color: #895061;
+    font-size: 2em;
+  }
+
+  .icon-j{
+    top: 60%;
+    left: 30%;
+  }
+  .icon-n{
+    top: 60%;
+    left: 40%;
+  }
+  .icon-r{
+    top: 60%;
+    left: 50%;
+  }
+
   .message {
     left: 20%;
     top: 40%;
@@ -259,7 +278,7 @@ span {
 
   .message3 {
     font-size: 2em;
-    left: 30%;
+    left: 25%;
     top: 0%;
     font-weight: lighter;
   }
