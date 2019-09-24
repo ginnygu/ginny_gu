@@ -237,7 +237,7 @@ span {
   .message,
   .message2,
   .message3 {
-    font-size: 4em;
+    font-size: 5em;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     color: #895061;
@@ -245,24 +245,18 @@ span {
     z-index: 2;
   }
 
-  .icons{
+  .icon-box{
     position: absolute;
+    display: flex;
+    top: 80%;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .icons{
     color: #895061;
     font-size: 2em;
-  }
+  } 
 
-  .icon-j{
-    top: 60%;
-    left: 30%;
-  }
-  .icon-n{
-    top: 60%;
-    left: 40%;
-  }
-  .icon-r{
-    top: 60%;
-    left: 50%;
-  }
 
   .message {
     left: 20%;
@@ -285,6 +279,12 @@ span {
 
   h1 {
     padding-top: 1em;
+  }
+
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
   }
 
   .project {

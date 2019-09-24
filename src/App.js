@@ -58,7 +58,7 @@ class App extends Component {
     }, '-=500')
     tl.add({
       targets: '.message3',
-      top:'37%',
+      top:'50%',
       opacity: 1,
       duration: 1000,
       easing: 'linear'
