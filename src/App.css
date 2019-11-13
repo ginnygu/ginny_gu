@@ -41,7 +41,7 @@ section div {
 }
 
 .message3 {
-  font-size: .5em;
+  font-size: 1em;
   left: 20%;
   top: 50%;
   font-weight: lighter;
@@ -98,6 +98,12 @@ section div {
   padding: 0;
 }
 
+.icons{
+  color: #895061;
+  font-size: 2em;
+  margin: 1em;
+} 
+
 .hamburger-menu {
   margin-left: 1.5em;
   margin-top: 1.5em;
@@ -130,9 +136,7 @@ span {
 #Home,
 #About,
 #Contact {
-  /* margin-top: 40px; */
-  /* padding-top: 20px; */
-  height: 100vh;
+  height: 50vh;
 }
 
 .project {
