@@ -101,7 +101,7 @@ section div {
 .icons{
   color: #895061;
   font-size: 2em;
-  margin: 1em;
+  margin: auto;
 } 
 
 .hamburger-menu {
@@ -136,7 +136,7 @@ span {
 #Home,
 #About,
 #Contact {
-  height: 50vh;
+  height: 70vh;
 }
 
 .project {
