@@ -312,7 +312,9 @@ span {
     text-align: center;
   }
   .text-input{
-    margin: 0em 20em;
+    width: 50%;
+    text-align: center;
+    margin: auto;
   }
 
 }
