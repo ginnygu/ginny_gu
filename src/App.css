@@ -21,6 +21,9 @@ section div {
 .about-title{
   display: none;
 }
+.about-me{
+  margin: 3em 0;
+}
 
 .message,
 .message2,
@@ -135,7 +138,9 @@ span {
   margin: auto;
 }
 
+
 #Contact {
+  margin-top: 5em;
   height: 75vh;
 }
 
