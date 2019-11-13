@@ -1,7 +1,7 @@
-import React, { Component }from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import emailjs from 'emailjs-com';
+import React, { Component }from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import emailjs from "emailjs-com";
 
 export default class Contact extends Component {
 
@@ -9,8 +9,8 @@ export default class Contact extends Component {
         super(props)
 
         this.state= {
-            email: '',
-            message: ''
+            email: "",
+            message: ""
         }
      
         
@@ -27,18 +27,20 @@ export default class Contact extends Component {
             "senderEmail": this.state.email,
             "message": this.state.message
         }
-        emailjs.send('default_service', process.env.REACT_APP_EMAILJS_TEMPLATEID, templateParams, process.env.REACT_APP_EMAILJS_USERID)
+        emailjs.send("default_service", process.env.REACT_APP_EMAILJS_TEMPLATEID, templateParams, process.env.REACT_APP_EMAILJS_USERID)
     }
 
     
 render(){
     return (
         <div className="contact">
-            <h1 className='title'>Contact</h1>
+            <h1 className="title">Contact Me</h1>
             <form className="contact-form" onSubmit={this.handleSubmit}>
-                <h1>Contact Me</h1>
-                <label htmlFor="email"></label>
-                <input type='text' id='email' name='email' onChange={this.handleChange}></input>
+                <div className="text-area">
+
+                <label htmlFor="email">Email:</label>
+                <input className="text-input" type="text" id="email" name="email" onChange={this.handleChange}></input>
+                <label htmlFor="message">Message:</label>
                 <textarea
                     className="text-input"
                     id="message"
@@ -47,13 +49,14 @@ render(){
                     placeholder="Enter your message here"
                     required
                 />
+                </div>
                 <div className="btn-group">
                     <button className="btn btn--cancel" >Cancel</button>
                     <input type="submit" value="Submit" className="btn btn--submit" />
                 </div>
             </form>
-            <FontAwesomeIcon className='contact-icon icon-l' icon={faLinkedin} />
-            <FontAwesomeIcon className='contanct-icon icon-l' icon={faGithubSquare} />
+            <FontAwesomeIcon className="contact-icon icon-l" icon={faLinkedin} />
+            <FontAwesomeIcon className="contanct-icon icon-l" icon={faGithubSquare} />
         </div>
     )
 

@@ -305,4 +305,13 @@ span {
     font-family: 'Montserrat', sans-serif;
   }
 
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-input{
+    margin: 0em 20em;
+  }
+
 }
