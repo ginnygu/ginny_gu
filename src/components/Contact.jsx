@@ -36,10 +36,11 @@ render(){
         <div className="contact">
             <h1 className="title">Contact Me</h1>
             <form className="contact-form" onSubmit={this.handleSubmit}>
-                <div className="text-area">
-
+                <div className="contact-area">
                 <label htmlFor="email">Email:</label>
-                <input className="text-input" type="text" id="email" name="email" onChange={this.handleChange}></input>
+                <input className="text" type="text" id="email" name="email" onChange={this.handleChange}></input>
+                </div>
+                <div className="text-area contact-area">
                 <label htmlFor="message">Message:</label>
                 <textarea
                     className="text-input"
@@ -50,7 +51,7 @@ render(){
                     required
                 />
                 </div>
-                <div className="btn-group">
+                <div className="btn-group contact-area">
                     <button className="btn btn--cancel" >Cancel</button>
                     <input type="submit" value="Submit" className="btn btn--submit" />
                 </div>
