@@ -18,6 +18,10 @@ section div {
   height: 100vh;
 }
 
+.about-title{
+  display: none;
+}
+
 .message,
 .message2,
 .message3 {
@@ -131,8 +135,6 @@ span {
   margin: auto;
 }
 
-#Home,
-#About,
 #Contact {
   height: 75vh;
 }
