@@ -21,7 +21,7 @@ section div {
 .message,
 .message2,
 .message3 {
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Montserrat', sans-serif;
   color: #895061;
   opacity: 0;
@@ -29,20 +29,17 @@ section div {
 }
 
 .message {
-  left: 10%;
   top: 40%;
   font-weight: lighter;
 }
 
 .message2 {
-  left: 15%;
   top: 50%;
   font-weight: bolder;
 }
 
 .message3 {
   font-size: 1em;
-  left: 20%;
   top: 50%;
   font-weight: lighter;
 }
@@ -100,8 +97,8 @@ section div {
 
 .icons{
   color: #895061;
-  font-size: 2em;
-  margin: auto;
+  font-size: 1.5em;
+  margin: 5%;
 } 
 
 .hamburger-menu {
@@ -129,14 +126,15 @@ span {
   flex-direction: column;
 }
 .text-input{
-  width: 100%;
+  width: 95%;
   height: 10em;
+  margin: auto;
 }
 
 #Home,
 #About,
 #Contact {
-  height: 70vh;
+  height: 75vh;
 }
 
 .project {
