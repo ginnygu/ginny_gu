@@ -36,7 +36,9 @@ section div {
 
 .travel-photo{
   transform: rotate(90deg);
-  width: 90%;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  width: 30%;
 }
 
 .message,
