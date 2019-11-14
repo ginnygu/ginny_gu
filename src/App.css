@@ -22,11 +22,11 @@ section div {
   display: none;
 }
 
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
 .about-me{
   margin: 3em 1.5em;

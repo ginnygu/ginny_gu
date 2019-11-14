@@ -23,7 +23,7 @@ class App extends Component {
   componentDidMount() {
     // add event listener for clicks
     document.addEventListener('click', this.handleClick);
-    window.addEventListener('scroll', this.handleScroll);
+    // window.addEventListener('scroll', this.handleScroll);
     this.anime();
 
   }
@@ -67,18 +67,18 @@ class App extends Component {
 
 
 
-  handleScroll = () => {
-    const { prevScrollpos } = this.state
-    const currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos || prevScrollpos === currentScrollPos) {
-      document.querySelector(".nav").style.top = "0";
-      // document.querySelector(".nav").classList.add('sticky')
-    } else {
-      document.querySelector(".nav").style.top = "-60px";
-      document.querySelector(".nav").classList.add('sticky')
-    }
-    this.setState({ prevScrollpos: currentScrollPos })
-  }
+  // handleScroll = () => {
+  //   const { prevScrollpos } = this.state
+  //   const currentScrollPos = window.pageYOffset;
+  //   if (prevScrollpos > currentScrollPos || prevScrollpos === currentScrollPos) {
+  //     document.querySelector(".nav").style.top = "0";
+  //     // document.querySelector(".nav").classList.add('sticky')
+  //   } else {
+  //     document.querySelector(".nav").style.top = "-60px";
+  //     document.querySelector(".nav").classList.add('sticky')
+  //   }
+  //   this.setState({ prevScrollpos: currentScrollPos })
+  // }
 
 
   ToOpen() {
