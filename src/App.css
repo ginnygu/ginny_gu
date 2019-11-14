@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Bebas Neue', cursive;
 }
 
 
@@ -23,6 +23,7 @@ section div {
 }
 .about-me{
   margin: 3em 1.5em;
+  color: #4c4c4c
 }
 
 .message,
@@ -167,6 +168,10 @@ span {
   border: solid 1px black;
 }
 
+.project-info {
+  color: #4c4c4c
+}
+
 @keyframes change {
   0% {
     border-radius: 20%;
@@ -285,9 +290,13 @@ span {
     padding-top: 1em;
   }
 
+  .about-title{
+    display: block;
+  }
+
   .about-me{
     width: 75%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
   }
 
@@ -312,6 +321,7 @@ span {
 
   .project-info {
     padding-left: 10px;
+    font-size: 1.2em;
     font-family: 'Montserrat', sans-serif;
   }
 
