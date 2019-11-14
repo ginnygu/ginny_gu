@@ -3,7 +3,7 @@ import React from 'react';
 function NavBar(props) {
     return (
         <nav className="nav">
-            <div className="logo" onClick={props.ToTop}>
+            <div className="logo" onClick={()=>props.ToArea('Top')}>
                 <img src="/mini-logo.png" alt="" />
             </div>
             <div className="nav-selection">

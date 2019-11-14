@@ -70,7 +70,7 @@ class App extends Component {
   handleScroll = () => {
     const { prevScrollpos } = this.state
     const currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
+    if (prevScrollpos > currentScrollPos || prevScrollpos === currentScrollPos) {
       document.querySelector(".nav").style.top = "0";
       // document.querySelector(".nav").classList.add('sticky')
     } else {
