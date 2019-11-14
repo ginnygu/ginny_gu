@@ -35,10 +35,10 @@ section div {
 }
 
 .travel-photo{
-  display: inline-block;
+  /* display: inline-block;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  transform: rotate(90deg); */
   width: 30%;
 }
 
@@ -317,7 +317,6 @@ span {
   }
 
   .travel-photo{
-    transform: rotate(90deg);
     width: 30%;
   }
 
