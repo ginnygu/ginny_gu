@@ -1,6 +1,7 @@
 import React, { Component }from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons'
 import emailjs from "emailjs-com";
 
 export default class Contact extends Component {
@@ -56,8 +57,9 @@ render(){
                     <input type="submit" value="Submit" className="btn btn--submit" />
                 </div>
             </form>
-            <FontAwesomeIcon className="contact-icon icon-l" icon={faLinkedin} />
-            <FontAwesomeIcon className="contanct-icon icon-l" icon={faGithubSquare} />
+            <a href="https://www.linkedin.com/in/ginny-gu-tang/"><FontAwesomeIcon className="contact-icon icon-l icons" icon={faLinkedin} /> </a>
+            <a href="https://github.com/ginnygu"><FontAwesomeIcon className="contact-icon icon-l icons" icon={faGithubSquare} /></a>
+            <a href="mailto:ginnygu@gmail.com"><FontAwesomeIcon className="contact-icon icon-l icons" icon={faEnvelopeSquare}/></a>
         </div>
     )
 
