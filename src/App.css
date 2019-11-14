@@ -39,7 +39,8 @@ section div {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); */
-  width: 30%;
+  /* width: 30%; */
+  height: 5%;
 }
 
 .message,
