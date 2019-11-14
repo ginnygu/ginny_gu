@@ -21,6 +21,13 @@ section div {
 .about-title{
   display: none;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .about-me{
   margin: 3em 1.5em;
   color: #4c4c4c;
