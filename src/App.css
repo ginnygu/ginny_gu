@@ -23,7 +23,8 @@ section div {
 }
 .about-me{
   margin: 3em 1.5em;
-  color: #4c4c4c
+  color: #4c4c4c;
+  font-size: 1.3em;
 }
 
 .message,
