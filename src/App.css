@@ -34,6 +34,11 @@ section div {
   font-size: 1.3em;
 }
 
+.travel-photo{
+  transform: rotate(90deg);
+  width: 30%;
+}
+
 .message,
 .message2,
 .message3 {
