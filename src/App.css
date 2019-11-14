@@ -36,7 +36,7 @@ section div {
 
 .travel-photo{
   transform: rotate(90deg);
-  width: 30%;
+  width: 90%;
 }
 
 .message,
@@ -311,6 +311,11 @@ span {
     width: 75%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
+  }
+
+  .travel-photo{
+    transform: rotate(90deg);
+    width: 30%;
   }
 
   .projects {
