@@ -318,7 +318,8 @@ span {
   }
 
   .travel-photo{
-    width: 30%;
+    margin-left: 1em;
+    width: 22%;
   }
 
   .projects {
