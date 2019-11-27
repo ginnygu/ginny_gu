@@ -4,10 +4,6 @@
 }
 
 
-body {
-  background-color: #d7ced7;
-}
-
 section {
   display: grid;
   grid-template-columns: repeat(10, auto);

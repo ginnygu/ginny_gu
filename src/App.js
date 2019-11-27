@@ -21,9 +21,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // add event listener for clicks
     document.addEventListener('click', this.handleClick);
-    // window.addEventListener('scroll', this.handleScroll);
     this.anime();
 
   }
